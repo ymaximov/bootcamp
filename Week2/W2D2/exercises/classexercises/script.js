@@ -1,13 +1,37 @@
-// Exercise 1
-// Make a keyless car!
+// const sentence = "The movie is not that bad, I like it"
+// const wordNot = sentence.search("not")
+// const wordBad = sentence.search("bad")
 
-// This car will only let you drive if you are over 18. Make it do the following:
+// const firstPart = sentence.slice(0, wordNot)
+// const secondPart = sentence.slice(wordBad + 3)
+// console.log('secondPart:', secondPart);
+// console.log('firstPart:', firstPart)
 
-// Using prompt() and alert(), ask a user for their age.
+// console.log('wordNot:', wordNot)
+// console.log('wordBad:', wordBad)
 
-// IF they say they are below 18, respond with: "Sorry, you are too young to drive this car. Powering off
-// IF they say they are 18, respond with: "Congratulations on your first year of driving. Enjoy the ride!
-// IF they say they are over 18, respond with: "Powering On. Enjoy the ride!"
+// console.log(firstPart + "good" + secondPart)
 
+// if (wordNot < wordBad) {
+//     const firstPart = sentence.slice(0, wordNot)
+//     const secondPart = sentence.slice(wordBad + 3)
+//     console.log(firstPart + "good" + secondPart)
+// }
 
-const userAnswer = prompt("what is your age")
+// else {
+//     console.log(sentence)
+// }
+
+let sentence = "The movie is not that bad, I like it"
+
+// position of first appearance of word not by character
+const wordNot = sentence.indexOf("not")
+console.log(wordNot)
+// position of first appearance of word "not" by index in an array
+const notone = sentence.split(" ").indexOf("not")
+console.log(notone)
+console.log(notone[5])
+
+const wordBad = sentence.split(" ").indexOf("bad,")
+console.log(wordBad)
+console.log(wordBad[5])
