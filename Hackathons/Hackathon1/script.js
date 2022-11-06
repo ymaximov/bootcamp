@@ -17,3 +17,4 @@ function searchItem(event){
         notExist.textContent = "Item does not exist"
     }
 }
+

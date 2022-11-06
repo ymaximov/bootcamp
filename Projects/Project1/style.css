@@ -1,0 +1,11 @@
+nav {
+    background-color: blanchedalmond;
+}
+
+.navitems {
+    display: flex;
+    border: 2px black solid;
+    width: 25%;
+    justify-content: space-between;
+
+}

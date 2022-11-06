@@ -13,6 +13,13 @@ function startDash(){
     loading.remove();
 }
 
+// const startDash=()=>{
+//     const form = document.querySelector("#crmform")
+//     form.style.display = "block"
+//     const loading = document.querySelector("#crmloading")
+//     console.log(loading);
+//     loading.remove(); 
+// }
 document.querySelector("#fname").value = "Yaniv"
 document.querySelector("#lname").value = "Maximov"
 document.querySelector("#pnumber").value = "050-606-0123"

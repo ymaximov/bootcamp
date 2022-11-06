@@ -1,7 +1,6 @@
-
-/* #logintext {
-
-} */
+* {
+    font-family: 'Raleway', sans-serif;
+}
 
 #loginform {
     display: flex;
