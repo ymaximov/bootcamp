@@ -216,6 +216,8 @@ Console.log the sum of this array
            spain : "Atlético Madrid",
          }
        }  
+       
+
     ```
 
 23. Use object destructuring in the function to retrieve the value of the keys `france` and `spain`

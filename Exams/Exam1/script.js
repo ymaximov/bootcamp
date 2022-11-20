@@ -137,6 +137,8 @@ let { clubs: { france }, clubs: { spain } } = football
 console.log(france);
 console.log(spain);
 
+//note: I am having a hard time with understanding destructuring
+
 function retrieveSports(team1, team2) {
     const sentence = `My favorite football teams are ${franceTeam} and ${spainTeam}`;
     console.log(france, spain);
