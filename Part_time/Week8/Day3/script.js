@@ -39,16 +39,28 @@
 
     //Exercise 5 : Juice Bar
 
+    // function makeJuice(size){
+    //     return size
+    // }
     
-    function addIngredients(one, two, three){
-        function makeJuice(size){
-            return size
-        }
-            let create = document.createElement("div")
-            let sentence = document.createTextNode(`The  Client Wants a ${makeJuice} Juice, containing ${one}, ${two} and ${three}`)
-            create.appendChild(sentence)
-            let element =  document.getElementById("sentence")
-            element.appendChild(create)
-            makeJuice("large")
-        }
-    addIngredients("apple Juice", "Pineapple", "Mango")
+    // function addIngredients(one, two, three){
+    //     const largeCup = makeJuice(large)
+    //         let create = document.createElement("div")
+    //         let sentence = document.createTextNode(`The  Client Wants a ${largeCup} Juice, containing ${one}, ${two} and ${three}`)
+    //         create.appendChild(sentence)
+    //         let element =  document.getElementById("sentence")
+    //         element.appendChild(create)
+    //         makeJuice("large")
+    //     }
+    // addIngredients("apple Juice", "Pineapple", "Mango")
+
+function makeJuice(size){
+    const ingredients = []
+    function addIngredients(i1, i2, i3){
+        let create = document.createElement("div")
+        create.textContent = "Hi"
+        document.body.appendChild(create)
+        ingredients.push(addIngredients)
+    }
+    addIngredients("apple", "orange", "banana")
+}
