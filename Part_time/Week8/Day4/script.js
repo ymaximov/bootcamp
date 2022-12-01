@@ -106,4 +106,4 @@ class Mamal extends Animal {
 
 const farmerCow = new Mamal("Lily", "Cow", "Brown and White")
 console.log(farmerCow)
-console.log(farmerCow.sound(moo))
+console.log(farmerCow.sound("moo"))
