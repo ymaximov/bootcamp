@@ -1,4 +1,4 @@
-// //EX2
+// //EX1
 // const xhr =  new XMLHttpRequest();
 
 // xhr.onload = function(){

@@ -60,5 +60,5 @@ const marioGame = {
   }
 
   const prettyPrint = JSON.stringify(marioGame, null, 2)
-  // console.table(marioGame)
+  console.table(marioGame)
   console.log(prettyPrint);

@@ -1,0 +1,186 @@
+// Promises async/await function
+// 1. penndeing
+// 2. fullfiled - resolve
+// 3. fullfiled - reject
+
+// const promise = new Promise( (resolve,reject) => {
+//
+// })
+// console.log(promise);
+
+
+// const flip = () => {
+//   const coin = Math.floor(Math.random() * 3)
+//   return (coin < 2) ? (coin == 0) ? 'head' : 'tail' : 'side';
+// }
+//
+// const flipCoin = new Promise((resolve,reject) => {
+//   const flipResult = flip();
+//   if(flipResult == 'head' || flipResult == 'tail'){
+//     // console.log('a resolve flip');
+//     resolve(flipResult)
+//   }
+//   else{
+//     reject(flipResult)
+//   }
+// })
+
+// console.log('I have flipped the coin');
+// console.log(flipCoin);
+// console.log('one');
+// flipCoin
+// .then((result)=>{
+//   return new Promise((resolve,reject)=>{
+//       setTimeout(()=>{
+//         // console.log('three');
+//         resolve(result + '!')
+//       },2000)
+//     })
+//   // return result + '!'
+// })
+// .then(result => {
+//   return result + '@';
+// })
+// .then(result => {
+//   console.log(result);
+// })
+// .then(result => {
+//   return new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//       console.log('three');
+//       resolve()
+//     },2000)
+//   })
+      // return Promise.resove('error from chaining')
+// })
+// .then(result=>{
+//   console.log('after three');
+//     // return Promise.reject('error from chaining')
+// })
+// .catch((err)=>{
+//   console.log('err=>', err);
+// })
+// .finally(()=> {
+//   console.log('finally');
+// })
+// console.log('two');
+
+/*
+write a function testNum that takes a number as an input and
+returns a Promise that tests if the value is less than 10
+value < 10 - resolve with some value
+reject with value
+call the function and get results
+*/
+
+// const testNum = (num) => {
+//   return new Promise((resolve,reject) => {
+//     if(num < 10){
+//       resolve('number is less than 10, success!!!')
+//     }
+//     else{
+//       reject('number is greater or equal to 10, error!!!')
+//     }
+//   })
+// }
+//
+// testNum(18)
+// .then(res => res )
+// .then(res => {
+//   console.log(res);
+// })
+// .catch(err => console.log(err))
+
+
+// static function on promises
+// Promise.all(...)
+// Promise.allSettled(...)
+// Promise.race(...)
+// Promise.resolve('value')
+// Promise.reject('error')
+
+
+// const promise1 = new Promise((resolve, reject)=>{
+//   setTimeout(()=>{
+//     resolve([1,2,3])
+//   },3000)
+// })
+//
+// const promise2 = new Promise((resolve, reject)=>{
+//   setTimeout(()=>{
+//     // resolve('result2')
+//     reject('error on promise2')
+//   },5000)
+// })
+//
+// const promise3 = new Promise((resolve, reject)=>{
+//   setTimeout(()=>{
+//     resolve('result3')
+//   },4000)
+// })
+
+// Promise.allSettled([promise1,promise2,promise3])
+// Promise.all( [promise1,promise2,promise3] )
+// Promise.race([promise1,promise2,promise3])
+// .then(result => {
+//   console.log(result);
+// })
+// .catch(err => {
+//   console.log(err);
+// })
+
+// fetch('https://jsonplaceholder.typicode.com/users')
+// .then(res => {
+//   if(res.status === 200){
+//     console.log(res.json());
+//       return res.json()
+//   }
+// })
+// .then(data => {
+//   console.log(data);
+// })
+// .catch(err => {
+//   console.log(err);
+// })
+
+/*
+https://jsonplaceholder.typicode.com/users
+https://jsonplaceholder.typicode.com/posts
+https://jsonplaceholder.typicode.com/albums
+*/
+// const urls = [
+//   'https://jsonplaceholder.typicode.com/users',
+//   'https://jsonplaceholder.typicode.com/posts',
+//   'https://jsonplaceholder.typicode.com/albums'
+// ]
+
+// const promises = urls.map(item => {
+//   return fetch(item).then(res => res.json())
+// })
+
+// Promise.race(urls.map(item => {
+//   return fetch(item).then(res => res.json())
+// }))
+// .then(results => {
+//   console.log(results);
+// })
+// .catch(err=>{
+//   console.log(err);
+// })
+// new FormData()
+// fetch('https://artistic-husky-spandex.glitch.me/example',{
+//   method:'POST',
+//   body: JSON.stringify({message:'OK'}),
+//   headers: {
+//     'Content-Type':'application/json'
+//   }
+// })
+// // fetch('https://jsonplaceholder.typicode.com/posts')
+// .then(res => res.text())
+// .then( (a) => {
+//   console.log(a);
+// 
+// })
+// .catch(err=>{
+//   console.log(err);
+// })

@@ -35,6 +35,7 @@ xhr.onload = function() {
         err.style.display = "none"
         const icon = res.weather[0].icon
         img1.src = `http://openweathermap.org/img/wn/${icon}@2x.png`
+        console.log(res);
     } else {
         console.error("Response not 200");
         err.innerHTML = "The location you have entered is invalid. Please Try Again"
