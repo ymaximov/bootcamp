@@ -1,0 +1,17 @@
+#frm {
+    display: flex;
+    flex-direction:column;
+    margin: 1px 1px 1px;
+}
+
+.hidden {
+    display: none;
+}
+
+.inline {
+    display: flex;
+}
+
+#completedtask {
+    display: none;
+}

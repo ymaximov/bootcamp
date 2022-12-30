@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form id="frm" onsubmit="addTask(event)">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name">
+    <label for="description">Description</label>
+    <textarea rows="10" cols="10" id="description"></textarea>
+    <label for="startdate">Start Date</label>
+    <input type="datetime-local" name="startdate" id="startdate">
+    <label for="enddate">End Date</label>
+    <input type="datetime-local" name="enddate" id="enddate">
+    <input type="submit" value="Submit" id="submit"">
+</form>
+<div id="tasks">
+    
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
