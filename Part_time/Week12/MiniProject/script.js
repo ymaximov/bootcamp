@@ -25,9 +25,10 @@ const createTask = (arr) => {
         <span class="hidden">${task.description}</span>
         <span>${task.start}</span>
         <span>${task.end}</span>
+        </div>
         <input type="checkbox" name="completed" id="completed">
-        <span id="completedtask">Completed</span>
-        </div>`
+        <span id="completedtask">Completed</span>`
+        completeTask()
     })
     root.innerHTML = html.join('');
 }
@@ -48,4 +49,11 @@ createTask(arr)
 const show = (id) => {
     console.log(id);
     document.querySelector(`#${id} .hidden`).style.display = "block"
+}
+
+const completeTask = () => {
+const checkBox = document.querySelector("completed")
+    if (checkBox = true) {
+        console.log("task complete");
+    }
 }
