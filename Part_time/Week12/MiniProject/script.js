@@ -28,7 +28,6 @@ const createTask = (arr) => {
         </div>
         <input type="checkbox" name="completed" id="completed">
         <span id="completedtask">Completed</span>`
-        completeTask()
     })
     root.innerHTML = html.join('');
 }
@@ -53,7 +52,8 @@ const show = (id) => {
 
 const completeTask = () => {
 const checkBox = document.querySelector("completed")
-    if (checkBox = true) {
+    checkBox.addEventListener("click", (event)=> {
+        console.log(event.target.checked);
         console.log("task complete");
-    }
+    })
 }
