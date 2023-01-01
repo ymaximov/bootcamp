@@ -15,5 +15,7 @@ returns int
 language plpgsql
 as
 $$
+begin
 
+end
 $$
