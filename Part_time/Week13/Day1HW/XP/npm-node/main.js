@@ -1,13 +1,13 @@
-//EX1
+// //EX1
 
-const a = 5;
-const b = 10;
+// const a = 5;
+// const b = 10;
 
-console.log(`Hello you are ${a + b}`);
+// console.log(`Hello you are ${a + b}`);
 
-//EX2
+// //EX2
 
-console.log('Hi How are you');
+// console.log('Hi How are you');
 
 //EX3
 
