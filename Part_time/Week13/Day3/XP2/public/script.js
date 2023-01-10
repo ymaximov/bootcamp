@@ -15,7 +15,7 @@ const showData = (data) => {
     const root = document.querySelector('#root');
     console.log(root);
     console.log(data);
-    root.textContent = `${data.firstname} ${data.lastname }`
+    root.textContent = `${data.firstname} ${data.lastname}`
 }
 
 const alertMe = () => {
